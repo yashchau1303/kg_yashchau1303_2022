@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"os"
-)
-
 func int_to_string(arr []string) {
 	var strarr []string
 	var str string
@@ -20,19 +15,14 @@ func int_to_string(arr []string) {
 	for i := range strarr {
 		print(strarr[i])
 		if i != len(strarr)-1 {
-			print(",")
+
 		}
 	}
-	fmt.Print("\n")
+
 }
 
 func main() {
-	// scanner := bufio.NewScanner(os.Stdin)
-	// scanner.Scan()
-	// input := scanner.Text()
-	// arr := strings.Split(input, " ")
-	arr := os.Args[1:]
-	// fmt.Println(arr)
+	var arr []string
 	int_to_string(arr)
 
 }
