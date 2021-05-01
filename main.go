@@ -27,12 +27,6 @@ func int_to_string(arr []string) {
 }
 
 func main() {
-	// scanner := bufio.NewScanner(os.Stdin)
-	// scanner.Scan()
-	// input := scanner.Text()
-	// arr := strings.Split(input, " ")
 	arr := os.Args[1:]
-	// fmt.Println(arr)
 	int_to_string(arr)
-
 }
